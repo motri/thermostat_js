@@ -5,7 +5,13 @@ function Thermostat(){
 };
 
 Thermostat.prototype.up = function(number) {
-  (this._temp += number);
+  if (this._temp === this._maxTemp){
+    throw "Max temp reached." ;
+  } else if (this._maxTemp < (this._temp + number)){
+    throw "Max temp reached.";
+  } else {
+    this._temp += number ;
+  }
 };
 
 Thermostat.prototype.down = function(number) {

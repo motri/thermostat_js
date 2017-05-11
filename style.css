@@ -1,0 +1,22 @@
+body{
+  background-color: black;
+}
+
+.thermostat {
+  border-color: black;
+  height:500px;
+  width: 500px;
+  margin: 15% auto;
+  background-color: red;
+}
+.display {
+  background-color: white;
+  text-align: center;
+  width: 50px;
+  border-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+.controls{
+  text-align: center;
+}
