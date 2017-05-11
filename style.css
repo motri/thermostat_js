@@ -3,64 +3,72 @@ body{
 }
 
 .thermostat {
+  background-image: url("http://2.bp.blogspot.com/-X25NulME0lk/VEzF0sf2hrI/AAAAAAAAAtE/3TUijVjXXgg/s1600/pattern-metallic3%2B1880x1800.jpg");
   border-radius: 90px;
   border: 2px solid #73AD21;
   border-color: black;
   height: 400px;
   width: 500px;
-  margin: 15% auto;
-  background-color: red;
+  margin: 10% auto;
 }
 .top{
-  margin-top: 15%;
+  /*margin-top: 15%;*/
 }
 .display {
+  background-image: url("https://c1.staticflickr.com/8/7003/6480810039_a15fbab507_b.jpg");
   border-radius: 10px;
   border-style: groove;
   border-color: black;
   border-width: 5px;
   padding-top: 5px;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 30px;
-  background-color: white;
   text-align: center;
   height: 150px;
   width: 200px;
   border-color: white;
   margin: 4% auto;
 }
+#temp{
+  position: relative;
+  margin: 15% auto;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 500%;
+}
+#on{
+  margin-top: inherit;
+  margin-left: 50%;
+  border-radius: 10px;
+  font-size: 80%;
+  height: 50px;
+  width: 80px;
+}
+#off{
+  margin-top: inherit;
+  border-radius: 10px;
+  font-size: 80%;
+  height: 50px;
+  width: 80px;
+}
 .controls{
-  margin-top: 10%;
+  position: relative;
+  /*margin-top: 10%;*/
   text-align: center;
 }
 
 #increase {
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 80%;
   height: 50px;
   width: 80px;
 }
 #decrease{
   border-radius: 10px;
-  font-size: 30px;
-  height: 50px;
-  width: 80px;
-}
-#on{
-  border-radius: 10px;
-  font-size: 13px;
-  height: 50px;
-  width: 80px;
-}
-#off{
-  border-radius: 10px;
-  font-size: 13px;
+  font-size: 80%;
   height: 50px;
   width: 80px;
 }
 .bottom-bar {
   margin: 3% auto;
-    text-align: center;
+  text-align: center;
 }
 #reset{
   margin: 3px auto;
