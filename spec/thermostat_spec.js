@@ -75,6 +75,7 @@ describe('Thermostat', function(){
       expect(britishGas.energyUsage).toMatch('medium-usage');
     });
     it('anything else is "high usage"', function() {
+      britishGas.powerModeOff()
       britishGas.up(6)
       expect(britishGas.energyUsage).toMatch('high-usage');
     });
