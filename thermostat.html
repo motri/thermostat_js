@@ -3,23 +3,29 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="src/thermostat.js"></script>
     <script type="text/javascript" src="mecha.js"></script>
   </head>
   <body>
     <div class="thermostat">
-      <div class="display">
-       <h1 id="temp"></h1>
-     </div>
+      <div class="top">
+        <div class="display">
+          <h1 id="temp"></h1>
+        </div>
+      </div>
       <div class="controls">
         <button id="increase">+</button>
         <button id="decrease">-</button>
         <button id="on">on</button>
         <button id="off">off</button>
       </div>
-      <div class="display">
+      <div class="displayMax">
        <h1 id="maxtemp"></h1>
+     </div>
+     <div class="bottom-bar">
+       <button id="reset">reset</button>
      </div>
     </div>
   </body>
