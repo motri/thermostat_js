@@ -48,19 +48,21 @@ body{
 }
 #on{
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 13px;
   height: 50px;
   width: 80px;
 }
 #off{
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 13px;
   height: 50px;
   width: 80px;
 }
 .bottom-bar {
   margin: 3% auto;
+    text-align: center;
 }
 #reset{
+  margin: 3px auto;
   text-align: center;
 }

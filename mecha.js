@@ -18,4 +18,9 @@ $(document).ready(function(){
   $('#off').on('click', function(){
     th.powerModeOff()
   })
+  $('#reset').on('click', function(){
+    th.resetTemp()
+    $('#temp').text(th._temp)
+  })
+
 });
