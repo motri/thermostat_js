@@ -7,19 +7,24 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="src/thermostat.js"></script>
     <script type="text/javascript" src="mecha.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="thermostat">
+
+      <button id="on"> Power saving on</button>
+      <button id="off">Power saving off</button>
       <div class="top">
         <div class="display">
+          <i class="fa fa-thermometer" style="font-size:30px;"></i>
+          <i class="fa fa-thermometer-2" style="font-size:30px;"></i>
           <h1 id="temp"></h1>
+
         </div>
       </div>
       <div class="controls">
         <button id="increase">+</button>
         <button id="decrease">-</button>
-        <button id="on"> Power saving on</button>
-        <button id="off">Power saving off</button>
       </div>
       <div class="displayMax">
        <h1 id="maxtemp"></h1>
