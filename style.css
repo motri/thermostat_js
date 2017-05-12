@@ -2,9 +2,27 @@ body{
   background-color: black;
 }
 
-.thermostat-background {
-  background-image: url("http://www.mining.com/wp-content/uploads/2011/01/shutterstock_64857112.jpg");
-  margin: 10% auto;
+.cityTemp {
+  background-color: white;
+  border-radius: 100px;
+  padding-top: 10px;
+  width: 150px;
+  height: 140px;
+  margin: 0%;
+}
+
+#tempUpdate {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 140%;
+}
+#weatherIcon {
+    text-align: center;
+}
+
+.thermostatBackground {
+  background-image: url("http://bit.ly/2ps37Gy");
+  margin: 0% auto;
   height:530px;
   width: 530px;
   padding:5px;
@@ -12,7 +30,7 @@ body{
 }
 
 .thermostat {
-  background-image: url("http://cp15.nevsepic.com.ua/235/23474/1423169071-background.png");
+  background-image: url("http://bit.ly/2qzNEUY");
   border-radius: 300px;
   border: 2px solid #73AD21;
   border-color: black;
@@ -21,17 +39,19 @@ body{
   margin: 2.5% auto;
   position: relative;
 }
-.top{
+
+.top {
   margin: 20% 11%;
   display: block;
   width: 350px;
   height: 150px;
 }
+
 .display {
   display: inline-block;
   vertical-align: top;
   width:75%;
-  background-image: url("http://www.hsfabrics.co.uk/100-1430-thickbox/emperor.jpg");
+  background-image: url("http://bit.ly/2qa9o8M");
   border-radius: 200px;
   border-style: groove;
   border-color: black;
@@ -50,28 +70,34 @@ body{
   font-size: 500%;
 }
 
-.power-dials{
+.powerDials{
   display: inline-block;
   vertical-align: top;
   width: 25%;
 }
+
 #on{
-  background-image: url("http://www.tstmosaictiles.com/image/cache/catalog/Mother%20of%20Pearl%20Tiles/MOP-SNMN-20/natural%20white%20mother%20of%20pearl%20seamless%20tile%20shell%20mosaics%20(2)-100x100.jpg");
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  background-image: url("http://bit.ly/2r1hCRL");
   margin-top: 45%;
   border-radius: 50px;
-  font-size: 80%;
+  font-size: 70%;
   height: 50px;
   width: 80px;
-  padding-bottom: 15%;
 }
+
 #off{
-  background-image: url("http://www.tstmosaictiles.com/image/cache/catalog/Mother%20of%20Pearl%20Tiles/MOP-SNMN-20/natural%20white%20mother%20of%20pearl%20seamless%20tile%20shell%20mosaics%20(2)-100x100.jpg");
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  background-image: url("http://bit.ly/2r1hCRL");
   margin-top: 15%;
   border-radius: 50px;
-  font-size: 80%;
+  font-size: 70%;
   height: 50px;
   width: 80px;
 }
+
 .controls{
   position: relative;
   text-align: center;
@@ -83,16 +109,19 @@ body{
   height: 50px;
   width: 80px;
 }
+
 #decrease{
   border-radius: 10px;
   font-size: 80%;
   height: 50px;
   width: 80px;
 }
-.bottom-bar {
+
+.bottomBar {
   margin: 3% auto;
   text-align: center;
 }
+
 #reset{
   margin: 3px auto;
   text-align: center;

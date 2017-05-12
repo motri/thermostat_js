@@ -7,19 +7,24 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="src/thermostat.js"></script>
     <script type="text/javascript" src="mecha.js"></script>
+    <script src="http://openweathermap.org/img/w/10d.png"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="thermostat-background">
+    <div class="cityTemp">
+      <p id='tempUpdate'></p>
+      <p id='weatherIcon'></p>
+    </div>
+    <div class="thermostatBackground">
       <div class="thermostat">
         <div class="top">
-          <div class="power-dials">
-            <button id="on"> POWER SAVING ON</button>
+          <div class="powerDials">
+            <button id="on">POWER SAVING ON</button>
             <button id="off">POWER SAING OFF</button>
           </div>
           <div class="display">
-            <i class="fa fa-thermometer" style="font-size:30px;"></i>
-            <i class="fa fa-thermometer-2" style="font-size:30px;"></i>
+            <i class="fa fa-thermometer" style="font-size:30px;" id="powerOff"></i>
+            <i class="fa fa-thermometer-2" style="font-size:30px;"id="powerOn"></i>
             <h1 id="temp"></h1>
           </div>
         </div>
@@ -30,7 +35,7 @@
         <div class="displayMax">
           <h1 id="maxtemp"></h1>
         </div>
-        <div class="bottom-bar">
+        <div class="bottomBar">
           <button id="reset">reset</button>
         </div>
       </div>
