@@ -3,7 +3,7 @@ body{
 }
 
 .cityTemp {
-  background-color: white;
+  background-image: url("http://3.bp.blogspot.com/-CSz6d4tvM7U/U_Rw8S81KZI/AAAAAAAAkWU/YlkpHak8n2k/s1600/Screen+Shot+2014-08-20+at+5.54.47+AM.png");
   border-radius: 100px;
   padding-top: 10px;
   width: 350px;
@@ -16,6 +16,7 @@ body{
   display: inline-block;
   text-align: center;
   font-family: 'Orbitron', sans-serif;
+  font-weight: bolder;
   font-size: 140%;
   width: 50%;
 }
@@ -23,7 +24,14 @@ body{
   vertical-align: top;
   display: inline-block;
   text-align: center;
+  margin-top: 2%;
+  height: 45px;
   width: 25%;
+}
+.city {
+  text-align: center;
+  margin-left: 20%;
+  display: inline-block;
 }
 
 .thermostatBackground {
