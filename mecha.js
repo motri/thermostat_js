@@ -8,34 +8,50 @@ $(document).ready(function(){
   var apiKey = '&appid=abc3302e9ff41d114253dcfe743b7ce4' ;
   var units = '&units=metric';
   var url = api + city + units + apiKey;
-
   th.weather = $.get(url, function(weather){
     $('#tempUpdate').text(weather['main'].temp + " C.");
     $('#weatherIcon').html("<img src='http://openweathermap.org/img/w/" + weather.weather[0].icon + ".png' alt='Icon depicting current weather.'>")
-  })
+  });
 
   $('#temp').text(th._temp);
   $('#increase').on('click', function(){
-    th.up(1)
-    $('#temp').text(th._temp)
-  })
+    th.up(1);
+    $('#temp').text(th._temp);
+    var temp = th._temp;
+      if (temp < 18) {
+        $('#temp').css('color', 'green')
+      }  else if (temp < 25) {
+        $('#temp').css('color', 'black')
+      } else {
+        $('#temp').css('color', 'red')
+      }
+  });
   $('#decrease').on('click', function(){
-    th.down(1)
-    $('#temp').text(th._temp)
-  })
+    th.down(1);
+    $('#temp').text(th._temp);
+    var temp = th._temp;
+      if (temp < 18) {
+        $('#temp').css('color', 'green')
+      }  else if (temp < 25) {
+        $('#temp').css('color', 'black')
+      } else {
+        $('#temp').css('color', 'red')
+      }
+  });
   $('#on').on('click', function(){
-    th.powerModeOn()
-    ('#poweroff').css('opacity', '0.0');
-    ("#poweron").css(color, 0.9);
+    th.powerModeOn();
+    $('#powerOff').css('opacity', 0.0);
+    $("#powerOn").css('opacity', 1);
   })
   $('#off').on('click', function(){
-    th.powerModeOff()
-    ("#poweroff").css('opacity', '0.9');
-    ("#poweron").css('opacity', '0');
-  })
+    th.powerModeOff();
+    $('#temp').text(th._temp);
+    $("#powerOff").fadeTo(0, 1);
+    $("#powerOn").fadeTo(0, 0);
+    $('#temp').text(th._temp);
+  });
   $('#reset').on('click', function(){
-    th.resetTemp()
-    $('#temp').text(th._temp)
-  })
-
+    th.resetTemp();
+    $('#temp').text(th._temp);
+  });
 });

@@ -26,6 +26,9 @@ Thermostat.prototype.down = function(number) {
   }
 };
 Thermostat.prototype.powerModeOn = function () {
+  if (this._temp > 25){
+    this._temp = 25;
+  }
   this._maxTemp = 25;
 };
 Thermostat.prototype.powerModeOff = function () {

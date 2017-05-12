@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  background-image: url("http://bit.ly/2pGdzGD");
 }
 
 .cityTemp {
@@ -37,6 +37,7 @@ body{
 
 .thermostat {
   background-image: url("http://bit.ly/2qzNEUY");
+  /*background-image: url("http://bit.ly/2pFJ8jW");*/
   border-radius: 300px;
   border: 2px solid #73AD21;
   border-color: black;
@@ -70,10 +71,19 @@ body{
   margin left: 0%;
 }
 #temp{
+  color: black;
   position: relative;
   margin: 15% auto;
   font-family: 'Orbitron', sans-serif;
   font-size: 500%;
+}
+
+#powerOn{
+  opacity: 1;
+}
+
+#powerOff{
+  opacity: 0;
 }
 
 .powerDials{
